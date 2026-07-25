@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>PagePulse - Website Analyzer</title>
+    <link rel="stylesheet" th:href="@{/css/style.css}">
+</head>
+<body>
+
+<div class="container">
+
+    <h1>🚀 PagePulse</h1>
+    <p class="subtitle">Website SEO & Performance Analyzer</p>
+
+    <div class="input-section">
+        <label for="url">Website URL</label>
+        <input
+                type="text"
+                id="url"
+                placeholder="Enter website URL (https://example.com)"
+        >
+        <button id="analyzeBtn">
+            🔍 Analyze Website
+        </button>
+
+    </div>
+
+    <p id="errorMessage" class="error"></p>
+    <h2>Analysis Result</h2>
+
+    <div class="result-grid">
+
+        <div class="result-card">
+            <strong>✅ Status</strong>
+            <span id="status"></span>
+        </div>
+
+        <div class="result-card">
+            <strong>⚡ Response Time</strong>
+            <span id="responseTime"></span>
+        </div>
+
+        <div class="result-card">
+            <strong>📄 Title</strong>
+            <span id="title"></span>
+        </div>
+
+        <div class="result-card">
+            <strong>📝 Meta Description</strong>
+            <span id="metaDescription"></span>
+        </div>
+
+        <div class="result-card">
+            <strong>🔖 H1 Count</strong>
+            <span id="h1Count"></span>
+        </div>
+
+        <div class="result-card">
+            <strong>🖼️ Images Missing Alt</strong>
+            <span id="imagesMissingAlt"></span>
+        </div>
+
+        <div class="result-card">
+            <strong>📊 Word Count</strong>
+            <span id="wordCount"></span>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <p>
+            Built for
+            <a href="https://digitalheroesco.com" target="_blank">
+                Digital Heroes Training Task
+            </a>
+        </p>
+    </footer>
+</div>
+
+
+<script th:src="@{/js/script.js}"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+<!--<div class="container">-->
+<!--<h1>PagePulse Website Analyzer</h1>-->
+
+<!--<hr>-->
+
+<!--<label for="url">Website URL:</label>-->
+<!--<input type="text" id="url" placeholder="Enter website URL">-->
+<!--<p id="errorMessage"></p>-->
+
+<!--<button id="analyzeBtn">Analyze Website</button>-->
+
+<!--<hr>-->
+
+<!--<h2>Analysis Result</h2>-->
+
+<!--<p><strong>Status:</strong> <span id="status"></span></p>-->
+
+<!--<p><strong>Response Time:</strong> <span id="responseTime"></span></p>-->
+
+<!--<p><strong>Title:</strong> <span id="title"></span></p>-->
+
+<!--<p><strong>Meta Description:</strong> <span id="metaDescription"></span></p>-->
+
+<!--<p><strong>H1 Count:</strong> <span id="h1Count"></span></p>-->
+
+<!--<p><strong>Images Missing Alt:</strong> <span id="imagesMissingAlt"></span></p>-->
+
+<!--<p><strong>Word Count:</strong> <span id="wordCount"></span></p>-->
+<!--</div>-->
